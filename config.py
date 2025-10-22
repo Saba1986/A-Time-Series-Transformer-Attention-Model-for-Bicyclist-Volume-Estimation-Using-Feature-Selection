@@ -42,7 +42,6 @@ data_file_path_d_2019 = "/Users/sabai/Desktop/data/counts/combined/output/combin
 
 target_variable = 'aadb'
 #target_variable = 'madb'
-#target_variable = 'Counts'
 
 save_checkpoints = True
 checkpoint_dir = './checkpoints'

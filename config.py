@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+# config.py
+
+# hyperparameters
+batch_size = 16
+validation_split = 0.1
+learning_rate = 0.0005
+#learning_rate = 0.001
+#epochs = 1000
+epochs = 100
+
+lstm_units = 64
+gru_units = 32
+dropout_rate = 0.5
+l2_reg = 0.02
+
+optimizer_type = 'Adam'
+beta_1 = 0.9
+beta_2 = 0.999
+
+noise_level = 0.1
+
+# cross validation
+n_splits = 10
+n_repeats = 5
+random_seed = 42
+
+# file path
+data_file_path_2022 = "/Users/sabai/Desktop/data/static/df1-2022.csv"
+data_file_path_2019 = "/Users/sabai/Desktop/data/static/df1-2019.csv"
+
+data_file_path_m_2022 = "/Users/sabai/Desktop/data/counts/combined/output/combined-pc-counts-monthly-stv2022.csv"
+data_file_path_m_2019 = "/Users/sabai/Desktop/data/counts/combined/output/combined-pc-counts-monthly-stv2019.csv"
+
+data_file_path_d_2022 = "/Users/sabai/Desktop/data/counts/combined/output/combined-pc-counts-daily-stv2022.csv"
+data_file_path_d_2019 = "/Users/sabai/Desktop/data/counts/combined/output/combined-pc-counts-daily-stv2019.csv"
+
+target_variable = 'aadb'
+#target_variable = 'madb'
+#target_variable = 'Counts'
+
+save_checkpoints = True
+checkpoint_dir = './checkpoints'
+verbose_level = 0
+
+show_plots = True
+plot_dir = './plots'
+
+use_batch_norm = True
+activation_function = 'relu'
+
+heads = 8
+d_ff = 2048
+n_layers = 1
+
